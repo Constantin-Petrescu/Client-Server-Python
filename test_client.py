@@ -8,7 +8,8 @@ from client import Client
 class TestClient(unittest.TestCase):
     # Setup of the unit test class for Scraper class
     def setUp(self):
-        self.input_path = 'test_input.txt'
+        cwd = os.getcwd()
+        self.input_path = cwd + 'test_input.txt'
         self.addresses_path = 'test_addresses.txt'
         self.output_path = 'test_output.txt'
 
